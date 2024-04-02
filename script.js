@@ -224,7 +224,7 @@ yearDate.textContent = date;
 
 window.addEventListener("scroll", () => {
   const header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 150);
+  header.classList.toggle("sticky", window.scrollY > 0);
 });
 
 // Change Navbar active link on scroll
@@ -243,7 +243,7 @@ window.onscroll = () => {
       navLinks.forEach((links) => {
         links.classList.remove("active");
         document
-          .querySelector(`.nav-link a[href*="${id}"]`)
+          .querySelector(`.nav-link a[href="#${id}"]`)
           .classList.add("active");
       });
     }

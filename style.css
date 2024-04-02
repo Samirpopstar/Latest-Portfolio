@@ -8,6 +8,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -109,7 +110,7 @@ header .container {
 
 .nav-menu {
   display: flex;
-  padding-right: 5rem;
+  padding-right: 1rem;
 
   & .nav-link {
     padding: 0 3.6rem;
@@ -151,7 +152,7 @@ main {
   background-color: var(--main-bg-color);
 
   & .container {
-    padding: 8rem 2.4rem 15.2rem;
+    padding: 7rem 2.4rem 16.2rem;
     display: flex;
     align-items: center;
   }
@@ -288,16 +289,14 @@ main {
 /***** About Section *****/
 
 #about-section {
-  margin-top: 10rem;
   background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("/images/green-dust-and-scratches.png");
 }
 
 #about-section .container {
   display: flex;
   align-items: start;
-  padding: 15rem 2.4rem;
+  padding: 15rem 2.4rem 12rem;
 }
 
 .about-image {
@@ -400,6 +399,10 @@ main {
 
 .description--content {
   margin-top: 2rem;
+}
+
+.about-education {
+  padding-left: 0.8rem;
 }
 
 .education-item {
@@ -532,7 +535,7 @@ p.edu-date {
   }
 }
 
-.fa-projects:nth-child(1) {
+.fa-projects.fa-github {
   font-size: 3.8rem;
   padding: 1.3rem;
 }
@@ -677,7 +680,7 @@ textarea:focus {
   justify-content: center;
 
   & .container {
-    padding: 4.5rem 0;
+    padding: 3rem 0;
     display: flex;
     gap: 3rem;
     align-items: center;
@@ -702,10 +705,10 @@ textarea:focus {
 
 @keyframes arrowAnim {
   0% {
-    transform: translateY(-30%);
+    transform: translateY(-25%);
   }
   100% {
-    transform: translateY(30%);
+    transform: translateY(25%);
   }
 }
 
