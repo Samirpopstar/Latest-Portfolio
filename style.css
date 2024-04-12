@@ -46,15 +46,6 @@ li {
   max-width: 140rem;
   margin: auto;
 }
-
-.grid {
-  display: grid;
-}
-
-.grid-two--cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
 /***** End Reusable Section *****/
 
 /***** Navbar Section *****/
@@ -75,14 +66,6 @@ header.sticky {
   & .container {
     padding: 1rem 2.4rem;
   }
-  /* 
-  .brand-section h2 {
-    color: white;
-  } */
-
-  /* .nav-link a {
-    color: white;
-  } */
 }
 
 header .container {
